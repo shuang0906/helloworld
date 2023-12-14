@@ -1,0 +1,178 @@
+[
+  {
+    "label": "ARLOGO",
+    "Syntax": "Arabic",
+    "agency": "unknown",
+    "date": "2012",
+    "url": "http://nas.sr/---/",
+    "lat": 40.7128,
+    "lng": -74.0060,
+    "community": "691",
+    "size": "1"
+  },
+  {
+    "label": "Chinese BASIC",
+    "Syntax": "Chinese",
+    "agency": "unknown",
+    "date": "1980s",
+    "url": "https://en.wikipedia.org/wiki/Chinese_BASIC",
+    "lat": 23.6978,
+    "lng": 120.9605,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "Chinese Python",
+    "Syntax": "Chinese",
+    "agency": "Chinese Python Dev Team",
+    "date": "2002",
+    "url": "http://chinesepython.org/",
+    "lat": 22.3193,
+    "lng": 114.177216,
+    "community": "5,727",
+    "size": "1"
+  },
+  {
+    "label": "Dolittleドリトル",
+    "Syntax": "Japanese",
+    "agency": "Osaka Electro-Communication University",
+    "date": "2017",
+    "url": "https://dolittle.eplang.jp/",
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "Dzintars",
+    "Syntax": "Latvian",
+    "agency": "Raimonds Simanovskis, Uģis Ozols, Maksim Berjoza",
+    "date": "2013",
+    "url": "https://github.com/dzintars-valoda/dzintars",
+    "lat": 56.8796,
+    "lng": 24.6032,
+    "community": "41",
+    "size": "1"
+  },
+  {
+    "label": "易语言",
+    "Syntax": "Chinese",
+    "agency": " 大连大有吴涛易语言软件开发有限公司",
+    "date": "2018",
+    "url": "https://epl.eyuyan.com/",
+    "lat": 38.9140,
+    "lng": 121.6147,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "Ezhil எழில்",
+    "Syntax": "Tami",
+    "agency": "Muthiah Annamalai",
+    "date": "2007",
+    "url": "https://ezhillang.org/",
+    "lat": 11.5290,
+    "lng": 78.7509,
+    "community": "2938",
+    "size": "2"
+  },
+  {
+    "label": "Hindawi",
+    "Syntax": "Hindi, Bangla, Gujrati, Assamese, Nepali and other Indian Syntaxs",
+    "agency": "Abhishek Choudhary",
+    "date": "2004",
+    "url": "https://sourceforge.net/projects/hindawi/",
+    "lat": 19.0760,
+    "lng": 72.8777,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "Fjölnir",
+    "Syntax": "Icelandic",
+    "agency": "Snorri Agnarsson",
+    "date": "1980s",
+    "url": "https://dl.acm.org/doi/10.1145/800225.806833",
+    "lat": 64.1396,
+    "lng": 21.9519,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "Linotte",
+    "Syntax": "French",
+    "agency": "Ronan Mounès",
+    "date": "2005",
+    "url": "http://langagelinotte.free.fr/wordpress/",
+    "lat": 46.2276,
+    "lng": 2.2137,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "LSE",
+    "Syntax": "French",
+    "agency": " Supélec, Télémécanique",
+    "date": "1970s",
+    "url": "https://en.wikipedia.org/wiki/LSE_(programming_Syntax)",
+    "lat": 48.7086,
+    "lng": 2.1639,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "Portugol",
+    "Syntax": "português",
+    "agency": " António Manso, Antonio Carlos Nicolodi",
+    "date": "1983",
+    "url": "https://pt.wikipedia.org/wiki/Portugol",
+    "lat": 39.6006,
+    "lng": 8.3898,
+    "community": "Unknown",
+    "size": "1"
+  },
+  {
+    "label": "Perligata",
+    "Syntax": "Latin",
+    "agency": "Damian Conway",
+    "date": "2001",
+    "url": "https://metacpan.org/pod/Lingua::Romana::Perligata",
+    "lat": -37.8141,
+    "lng": 144.9630,
+    "community": "383",
+    "size": "1"
+  },
+  {
+    "label": "zhpy",
+    "Syntax": "Chinese",
+    "agency": "gasolin, 林博仁",
+    "date": "2007",
+    "url": "https://pypi.org/project/zhpy/",
+    "lat": 25.0330,
+    "lng": 121.5654,
+    "community": "55",
+    "size": "1"
+  },
+  {
+    "label": "قلب",
+    "Syntax": "Arabic",
+    "agency": "Ramsey Nasser",
+    "date": "2012",
+    "url": "http://nas.sr/---/",
+    "lat": 40.7128,
+    "lng": -74.0060,
+    "community": "691",
+    "size": "1"
+  },
+  {
+    "label": "Эль-76",
+    "Syntax": "Russian",
+    "agency": "Boris Babayan & Co",
+    "date": "1973",
+    "url": "https://io89.pl.tl/%26%231059%3B%26%231089%3B%26%231090%3B%26%231072%3B%26%231074%3B%26%231099%3B-%26%231085%3B%26%231072%3B-%26%231082%3B%26%231110%3B%26%231088%3B%26%231099%3B%26%231083%3B%26%231110%3B%26%231094%3B%26%231099%3B.htm#eli",
+    "lat": 55.9294,
+    "lng": 37.5213,
+    "community": "Unknown",
+    "size": "1"
+  }
+]

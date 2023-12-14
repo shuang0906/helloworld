@@ -1,0 +1,229 @@
+.editor {
+    display: flex;
+}
+
+.line-numbers {
+    text-align: right;
+    padding-right: 10px;
+    background-color: #eee;
+    user-select: none;
+}
+
+.code {
+    border: 1px solid #ddd;
+    padding-left: 35px;
+    white-space: pre;
+    overflow: auto;
+}    
+
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes closeWindowAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.close-window {
+  animation: closeWindowAnimation 0.5s ease forwards !important;
+}
+
+.pop-up {
+  animation: popUp 0.5s ease forwards;
+  /* opacity: 1 !important; */
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 10; */
+}
+
+#bg {
+
+}
+
+#changeImage {
+  border: 1px solid black;
+  position: absolute;
+  top: 200;
+  left: 200;
+  z-index: 100000;
+}
+
+#bgcontainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: clip;
+}
+
+
+/*----------------------------------------------------------*/
+
+#defaultCanvas0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.aClassName{
+  z-index: 0 !important;
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+  /* background-image: url("assets/bg/b1.png"); */
+  background-color: #aaaaaa !important;
+  background-size: 200px;
+  background-repeat: repeat;
+  overflow: scroll;
+}
+
+.window {
+  position: absolute;
+}
+
+.lang {
+  z-index: 10;
+}
+
+.greeting {
+  z-index: 1;
+}
+
+.greetings{
+  opacity: 0;
+  width: 250px;
+}
+
+.greetingss{
+  opacity: 1;
+}
+
+.title-bar {
+  cursor: move;
+  z-index: 10;
+}
+
+.tree-view{
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.appended-div {
+  position: absolute;
+}
+
+.meter {
+  box-sizing: content-box;
+  height: 5px;
+  position: relative;
+  margin: 10px 0 15px 0;
+  background: #555;
+  padding: 0px;
+}
+
+.meter>span {
+  display: block;
+  height: 100%;
+  background-color: rgb(0, 255, 68);
+  position: relative;
+  overflow: hidden;
+}
+
+.meter>span:after,
+.animate>span>span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+
+#google_translate_element{
+  position: fixed; /* Sit on top of the page content */
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.toolbar-drag-handle {
+  width: 3px;
+  margin-right: 3px;
+  box-sizing: border-box;
+  position: relative;
+  touch-action: none;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px grey, inset 1px 1px #dfdfdf;
+  /* border-top: 2px solid red;
+  border-left: 2px solid blue; */
+}
+
+.icon{
+  width: 16px;
+  height: 16px;
+  background-image: url(assets/orgimg/browse-ui-icons-grayscale.png);
+  background-size: auto 16px;
+}

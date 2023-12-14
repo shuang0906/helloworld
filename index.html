@@ -1,0 +1,529 @@
+<html>
+
+<head>
+  <title>Hello World</title>
+  <link rel="shortcut icon" href="assets/globe.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="article.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5.glitch@latest/p5.glitch.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/satellite.js/dist/satellite.min.js"></script>
+  <script src="//unpkg.com/globe.gl"></script>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script src="/helloworld/src/popup.js"></script>
+  <script src="/helloworld/src/editor.js"></script>
+
+
+  <script type="importmap">
+    {
+                "imports": {
+                    "three": "https://unpkg.com/three@v0.158.0/build/three.module.js",
+                    "three/addons/": "https://unpkg.com/three@v0.158.0/examples/jsm/"
+                }
+            }
+        </script>
+</head>
+
+<body>
+
+  <!-- <p id="datetime"></p> -->
+  <audio autoplay>
+    <source src="assets/start.wav" type="audio/wav">
+  </audio>
+
+
+  <!-- top bar -->
+  <div class="window" style="z-index: 10000; top: 0; left: 50%; transform: translate(-50%, 0); position:fixed">
+    <div class="sunken-panel" style="overflow: hidden;">
+      <table class="interactive">
+        <thead>
+          <tr style="display: flex; flex-direction: row" ;>
+            <th style="display: flex; align-items: center; padding: 0 4px; height: 23px">
+              <div class="toolbar-drag-handle">&nbsp</div>
+              <div><img src="assets/orgimg/html-16x16.png"></div>
+              <div style="padding: 0 4px;">Address</div>
+              <select id="urlDropdown" style="width: 20vw;">
+                <span>whenever</span>
+                <option>https://www.google.com</option>
+                <option>https://www.bing.com</option>
+              </select>
+            </th>
+            <th style="padding: 0 ">
+              <button id="goButton"
+                style="display: flex; align-items: center; padding: 0 4px; min-width: 0 !important;">
+                <div class="toolbar-drag-handle">&nbsp</div>
+                <div class="icon" style="background-position: -16px 0px;"></div>
+                <div style="padding: 0 4px;">Go</div>
+              </button>
+            </th>
+            <th style="padding: 0">
+              <button disabled style="display: flex; align-items: center; padding: 0 4px; min-width: 0 !important;">
+                <div class="toolbar-drag-handle">&nbsp</div>
+                <div>Links</div>
+                <div>»</div>
+              </button>
+            </th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <!-- side bar -->
+  <div class="window" style="z-index: 10000; top: 50%; right: 0; transform: translate(0, -50%); position:fixed">
+    <button
+      style=" width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
+      <img style="min-width: 100%;" src="assets/orgimg/calendar.png">
+    </button>
+    <button id="btn1"
+      style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
+      <img style="min-width: 100%;" src="assets/orgimg/globe.png">
+    </button>
+    <button id ="btn2" 
+    style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
+      <img style="min-width: 100%;" src="assets/orgimg/note.png">
+    </button>
+    <button onclick="closeAllWindows()"
+      style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
+      <img style="min-width: 100%;" src="assets/orgimg/recycle.png">
+    </button>
+  </div>
+
+  <!-- translate -->
+  <div class="window" id="google_translate_element"></div>
+
+  <div id="section1"></div>
+
+  <!-- three -->
+  <div id="bgcontainer">
+    <canvas id="bg"></canvas>
+    <div id="globeViz"></div>
+  </div>
+  <script type="module" src="globe.js"></script>
+
+  <!-- greeting -->
+  <div id="greetings-container"></div>
+
+  <!-- h1 -->
+  <div class="window dragdiv lang" style="top: 317px; left: 1200px;">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        Hello World
+      </div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <ul class="tree-view">
+        <img width="100%" src="./assets/image/h1.svg">
+      </ul>
+    </div>
+  </div>
+  <!-- h2 -->
+  <div class="window dragdiv lang" style="top: 90px; left: 190px;">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        你好世界
+      </div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <ul class="tree-view">
+        <img height="100%" src="./assets/image/h2.svg">
+      </ul>
+    </div>
+  </div>
+  <!-- h3 -->
+  <div class="window dragdiv lang" style="left: 1035px; top: 101px;">
+    <div class="title-bar">
+      <div class="title-bar-text">Hola mundo!</div>
+
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <ul class="tree-view">
+        <img height="100%" src="./assets/image/h3.svg">
+      </ul>
+    </div>
+  </div>
+  <!-- h4 -->
+  <div class="window dragdiv lang" style="top: 405px; left: 259px;">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        Olá, mundo!
+      </div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <ul class="tree-view">
+        <img width="100%" src="./assets/image/h4.svg">
+      </ul>
+    </div>
+  </div>
+  <!-- h5 -->
+  <div class="window dragdiv lang" style="top: 572px; left: 1221px;">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        Olá, mundo!
+      </div>
+
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <ul class="tree-view">
+        <img width="100%" src="./assets/image/h5.svg">
+      </ul>
+    </div>
+  </div>
+
+  <div style="height: 100vh;"></div>
+
+  <div id="section2"></div>
+
+  <div id="externalContent"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('article.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('externalContent').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading external content:', error));
+    });
+
+  </script>
+
+  <div class="editor">
+    <div id="lineNumbers" class="line-numbers"></div>
+    <div id="code" class="code" contenteditable="true">
+      line 1
+      line 2
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+
+
+//sideNav
+
+function smoothScroll(target, duration) {
+    var targetElement = document.querySelector(target);
+    var targetPosition = targetElement.getBoundingClientRect().top;
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
+document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('btn1').addEventListener('click', function() {
+          smoothScroll('#section1', 1000); // Scroll over 1000 milliseconds (1 second)
+        });
+
+        document.getElementById('btn2').addEventListener('click', function() {
+          smoothScroll('#section2', 500); // Scroll over 1000 milliseconds (1 second)
+        });
+    });
+
+  function closeAllWindows() {
+    var windows = document.querySelectorAll('.dragdiv'); // Assuming dragdiv is the class for draggable windows
+    windows.forEach(function (window, index) {
+      // Set a timeout to add the class that triggers the closing animation
+      window.classList.add('close-window');
+
+      // Optionally, remove the window from the DOM after the animation completes
+      setTimeout(function () {
+        window.parentNode.removeChild(window);
+      }, 500); // This should match the duration of the closing animation
+    });
+  }
+
+
+
+  // Get current date and time
+  // var now = new Date();
+  // var datetime = now.toLocaleString();
+
+  // Insert date and time into HTML
+  // document.getElementById("datetime").innerHTML = datetime;
+
+  //bg container
+  function setDivWidth() {
+    var myDiv = document.getElementById('bgcontainer');
+    myDiv.style.width = document.body.clientWidth + 'px';
+    myDiv.style.height = document.body.clientHeight - 1 + 'px';
+  }
+  setDivWidth();  // Set initial width
+  window.addEventListener('resize', setDivWidth);  // Update width on window resize
+
+  //==============================================================
+
+  function getRandomPosition(element) {
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
+    var elementWidth = element.offsetWidth;
+    var elementHeight = element.offsetHeight;
+
+    var randomX = Math.random() * (screenWidth - elementWidth - 10);
+    var randomY = Math.random() * (screenHeight - elementHeight - 10);
+
+    return { x: randomX, y: randomY };
+  }
+
+  // Apply random position to each .window.dragdiv element
+  // document.querySelectorAll('.window.dragdiv').forEach(function (element) {
+  //   var position = getRandomPosition(element);
+  //   element.style.left = position.x + 'px';
+  //   element.style.top = position.y + 'px';
+  // });
+
+  /////////////////////////////////
+  const elss = document.querySelectorAll(".dragdiv");
+  elss.forEach((name) => {
+    dragElement(name);
+  });
+
+  function dragElement(elmnt) {
+    var pos1 = 0,
+      pos2 = 0,
+      pos3 = 0,
+      pos4 = 0;
+    elmnt.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+      elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+    }
+    function closeDragElement() {
+      /* stop moving when mouse button is released:*/
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+
+
+  fetch('datasets/lData.json')
+    .then(response => response.json())
+    .then(greetingsData => {
+      setTimeout(5000);
+      displayGreetings(greetingsData);
+    })
+    .catch(error => console.error('Error:', error));
+
+  function getCascadeStartPosition(n, xOffset, yOffset, windowWidth, windowHeight) {
+    // Total width and height the cascade will occupy
+    var totalWidth = windowWidth + ((n - 1) * xOffset);
+    var totalHeight = windowHeight + ((n - 1) * yOffset);
+    // Center of the screen
+    var centerX = window.innerWidth / 2;
+    var centerY = window.innerHeight / 2;
+    // Starting position for the first window
+    var startX = centerX - totalWidth / 2;
+    var startY = centerY - totalHeight / 2;
+
+    return { x: startX, y: startY };
+  }
+
+
+  function getPosition(startPosition, index, xOffset, yOffset) {
+    // Position for each subsequent window
+    var x = startPosition.x + xOffset * index;
+    var y = startPosition.y + yOffset * index;
+    return { x, y };
+  }
+
+  function displayGreetings(data) {
+
+    var xOffset = 20; // Horizontal offset for each window
+    var yOffset = 20; // Vertical offset for each window
+    var n = data.greetings.length; // Total number of windows
+    // Calculate the starting position for the cascade
+    var windowWidth = 256; // Width of each window
+    var windowHeight = 83; // An assumed height for each window
+    var cascadeStart = getCascadeStartPosition(n, xOffset, yOffset, windowWidth, windowHeight);
+
+    data.greetings.forEach(
+      function (greeting, index) {
+        var div = document.createElement('div');
+        div.style.position = "absolute";
+        div.innerHTML = `
+          <div class="window dragdiv greetings">
+            <div class="overlay"></div>
+          <div class="title-bar">
+            <div class="title-bar-text">`
+          + greeting.language +
+          `</div>
+            <div class="title-bar-controls notranslate">
+              <button aria-label="Minimize" onclick="minWindow(this)"></button>
+              <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+              <button class="close" aria-label="Close" onclick="closeWindow(this)"></button>
+            </div>
+          </div>
+          <div class="window-body" style="display:contents;">
+            <p>`+ greeting.greeting + `</p>
+            <section class="field-row" style="justify-content: flex-end">
+              <button onclick="closeWindow(this)">OK</button>
+              <button disabled>Cancel</button>
+            </section>
+          </div>
+
+          </div>
+        </div>      
+          `;
+
+        var greetingsContainer = document.getElementById("greetings-container");
+        greetingsContainer.appendChild(div);
+
+        let firstChild = div.firstElementChild;
+        setActiveWindow(firstChild);
+        div.onmousedown = function (event) {
+          // Check if the event target does not have the class 'test'
+          if (!event.target.classList.contains('close')) {
+            setActiveWindow(firstChild);
+          }
+        };
+
+        dragElement(div.querySelector('.dragdiv')); // Apply drag functionality to each new div
+
+        var position = getPosition(cascadeStart, index, xOffset, yOffset);
+        var dragDiv = div.querySelector('.dragdiv');
+        dragDiv.style.left = position.x + 'px';
+        dragDiv.style.top = position.y + 'px';
+
+        // Set a timeout to add the class that triggers the animation
+        setTimeout(function () {
+          dragDiv.classList.add('pop-up');
+          dragDiv.classList.add('greetingss');
+        }, index * 100); // Delay increases with each window
+
+      });
+  }
+</script>
+
+<!-- <script>
+
+  window.onload = function () {
+    var backgroundImg = [
+      "https://freight.cargo.site/w/315/i/71cf8d01d7b861b6fd411b9a3ac3eeffdb906a8dcb56044f362a16a18fd95291/Backgrounds.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/24.gif",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_3.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/35.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_1.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_23.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_3.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_5.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_2.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_17.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_15.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_25.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_18.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_20.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_21.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_22.jpg",
+      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_24.jpg",
+
+      /*
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxUi-tnLg7bksj9aU3WT0p9pNdaeyyt15T_mwlEiFEIRie1S_-CEGus4VECYaQQQQ7818&usqp=CAU",
+      "https://64.media.tumblr.com/31ccc2317072f0c8404b4a78c17e6e53/e9e22e92578d6d23-6d/s400x600/322377fdb12bd4cd9bea4d7cb408eb8dc0da277f.png",
+      "https://44.media.tumblr.com/98db6ef8e77d036075b8f351902bb58d/485d779385c544e4-69/s250x400_f1/8479f82ed60a5e294e8ef2bed1eade9392abd03d.gif",
+      "https://64.media.tumblr.com/6455faa31c46d913d0562feaef1906ae/3930eb25d2f43a09-a0/s250x400/173471551b427cfec06406b67b9367138cf16a6f.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCTQMXTogafLaua-Xd_YYTQ5umRgRh8CCHldadWGcWub0G6xFhBUjAkcpvRpy1nrunJI&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmkLFkcRfrYySnXh4UJOVz60KeDbgpQZkM6Q&usqp=CAU",
+      "https://64.media.tumblr.com/f52ddf6a216fdc5fb9d4eca8f27c8eec/782d8db93ae19c51-b2/s250x400/62877c4fd5d3b407c3d742a0c2f0ff774687b2ae.png",
+      "https://www.geocities.ws/ratusnorvegicus/electricwaves.gif",
+      "https://64.media.tumblr.com/af6da3feaa34ecc7bb2b36d877e4a235/782d8db93ae19c51-b7/s250x400/8122a57141958bd9b065d3b246621c59f116e081.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBrcGcL25B94IM9dV5rAGieXaw2uHwHZ-tg&usqp=CAU",
+      "https://untroubled.org/backgrounds/red/flames.jpg"*/
+    ]
+
+    setInterval(changeImage, 10000);
+
+    function changeImage() {
+      var i = Math.floor((Math.random() * backgroundImg.length));
+
+      document.body.style.backgroundImage = "url('" + backgroundImg[i] + "')";
+
+    }
+  }
+</script> -->
+
+<script>
+
+
+
+
+</script>

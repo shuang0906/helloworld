@@ -1,0 +1,32 @@
+{
+    "greetings": [
+      { "language": "Afrikaans", "greeting": "Hallo, wêreld!" },
+      { "language": "Albanian", "greeting": "Pershëndetje Botë" },
+      { "language": "Arabic", "greeting": "أهلاً بالعالم" },
+      { "language": "Armenian", "greeting": "Բարե՛ւ, աշխարհ։" },
+      { "language": "Azeri", "greeting": "Salam Dünya" },
+      { "language": "Basque/Euskara", "greeting": "Kaixo mundua!" },
+      { "language": "Belarusian", "greeting": "Прывітанне свет" },
+      { "language": "Bemba", "greeting": "Shani Mwechalo!" },
+      { "language": "Bengali", "greeting": "Shagatam Prithivi!" },
+      { "language": "Bosnian", "greeting": "Zdravo Svijete!" },
+      { "language": "Bulgarian", "greeting": "Здравей, свят!" },
+      { "language": "Czech", "greeting": "Ahoj Světe!" },
+      { "language": "Cambodian", "greeting": "ជំរាបសួរ ពិភពលោក" },
+      { "language": "Catalan", "greeting": "Hola món!" },
+      { "language": "Chinese", "greeting": "你好世界" },
+      { "language": "Cherokee", "greeting": "ᎣᏏᏲ ᎡᎶᎯ" },
+      { "language": "Chinook", "greeting": "Wawa Klahowya Hayas Klaska" },
+      { "language": "Croatian", "greeting": "Bok Svijete!" },
+      { "language": "Danish", "greeting": "Hej, Verden!" },
+      { "language": "Dutch", "greeting": "Hallo, wereld!" },
+      { "language": "English", "greeting": "Hello World!" },
+      { "language": "Esperanto", "greeting": "Saluton mondo!" },
+      { "language": "Estonian", "greeting": "Tere maailm!" },
+      { "language": "Finnish", "greeting": "Hei maailma!" },
+      { "language": "French", "greeting": "Salut le Monde!" },
+      { "language": "Frisian", "greeting": "Hallo, wrâld!" }
+
+  ]
+  
+  }

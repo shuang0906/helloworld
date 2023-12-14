@@ -1,0 +1,112 @@
+[
+    {
+      "label": "ALGOL 68",
+      "Syntax": "Multilingual",
+      "agency": "International Federation for Information Processing",
+      "date": "1968",
+      "url": "https://github.com/stepan-mitkin/drakon_editor",
+      "lat": 48.0666,
+      "lng": 16.35,
+      "community": "Unknown",
+      "size": "1"
+    },
+    {
+      "label": "Blockly",
+      "Syntax": "Visual",
+      "agency": "Google, MIT",
+      "date": "2012",
+      "url": "https://github.com/google/blockly",
+      "lat": -37.5630,
+      "lng": -122.3255,
+      "community": "11,200",
+      "size": "10"
+    },
+    {
+      "label": "DRAKON",
+      "Syntax": "Visual",
+      "agency": "Academician Pilyugin Center",
+      "date": "1986",
+      "url": "https://github.com/stepan-mitkin/drakon_editor",
+      "lat": -55.7558,
+      "lng": -37.6173,
+      "community": "Unknown",
+      "size": "1"
+    },
+    {
+      "label": "4th Dimension",
+      "Syntax": "Multilingual",
+      "agency": "4D SAS",
+      "date": "1984",
+      "url": "http://us.4d.com/",
+      "lat": -48.8566,
+      "lng": -2.3522,
+      "community": "Unknown",
+      "size": "1"
+    },
+    {
+      "label": "Karel",
+      "Syntax": "Czech, Multilingual",
+      "agency": "Richard E. Pattis",
+      "date": "1981",
+      "url": "http://mormegil.wz.cz/prog/karel/prog_doc.htm",
+      "lat": -37.4275,
+      "lng": -122.1697,
+      "community": "Unknown",
+      "size": "1"
+    },
+    {
+      "label": "LOLCODE",
+      "Syntax": "English slang words",
+      "agency": "Adam Lindsay",
+      "date": "2007",
+      "url": "https://www.tutorialspoint.com/lolcode/index.htm",
+      "lat": 54.0102,
+      "lng": -2.7855,
+      "community": "Unknown",
+      "size": "1"
+    },
+    {
+      "label": "Pikachu",
+      "Syntax": "PikaSpeak",
+      "agency": "Nilabhro Datta",
+      "date": "2017",
+      "url": "https://trove42.com/introducing-pikachu-programming-Syntax/",
+      "lat": 38.6270,
+      "lng": 90.1994,
+      "community": "Unknown",
+      "size": "1"
+    },
+    {
+      "label": "Scratch",
+      "Syntax": "Multilingual",
+      "agency": "MIT Media Lab",
+      "date": "2007",
+      "url": "https://scratch.mit.edu/",
+      "lat": 42.3736,
+      "lng": -71.1105,
+      "community": "103,000,000,000",
+      "size": "90"
+    },
+    {
+      "label": "Whitespace",
+      "Syntax": "English slang words",
+      "agency": "Edwin Brady, Chris Morris",
+      "date": "2003",
+      "url": "https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.php",
+      "lat": 34.7650,
+      "lng": 1.5782,
+      "community": "Unknown",
+      "size": "1"
+    },
+    {
+      "label": "Wikitext",
+      "Syntax": "Multilingual",
+      "agency": "Wikipedia",
+      "date": "2001",
+      "url": "https://en.wikipedia.org/wiki/Help:Wikitext",
+      "lat": 37.7739,
+      "lng": -122.4312,
+      "community": "32,000,000",
+      "size": "95"
+    }
+  ]
