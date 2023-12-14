@@ -196,7 +196,7 @@ const world = Globe({ antialias: false, alpha: true })(
 
   //globe--------------------------------------------------------------------------------
 
-  .globeImageUrl("Assets/earth-blue-marble.png")
+  .globeImageUrl("assets/earth-blue-marble.png")
   .bumpImageUrl("//unpkg.com/three-globe/example/img/earth-topology.png")
   .atmosphereColor("#ffffff") //85defb
   .atmosphereAltitude(0.3)
