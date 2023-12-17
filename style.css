@@ -375,3 +375,27 @@ body {
   background-size: auto 14px;
   margin-right: 5px;
 }
+
+
+.help-icon{
+  position: absolute;
+  z-index: 10;
+  top: 33px;
+  left: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help{
+  width: 50px;
+  height: 50px;
+  background-image: url(assets/orgimg/Help.png);
+}
+
+.help-layer {
+  display: none;
+}
+.help-icon:hover + .help-layer {
+  display: block;
+}
