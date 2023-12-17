@@ -379,10 +379,10 @@ h1 {
   font-weight: 700;
   padding: 0;
   margin: 0;
-  font-size: 19.1vmin;
+  font-size: 8vmin;
   line-height: 1;
-  color: transparent;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+  /* color: transparent; */
+  /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.75); */
   letter-spacing: 0.075rem;
 }
 
@@ -426,16 +426,12 @@ small a {
 }
 
 h3 {
-  font-family: "Neue Haas Grotesk", Icons;
-  font-style: normal;
+  font-style: bold;
   padding: 0;
   margin: 0;
   font-size: 1.5rem;
   line-height: 1.2;
   color: black;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: -0.05rem;
 }
 
 h3 a {

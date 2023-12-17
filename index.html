@@ -60,7 +60,6 @@
               <div><img src="assets/orgimg/html-16x16.png"></div>
               <div style="padding: 0 4px;">Address</div>
               <select id="urlDropdown" style="width: 20vw;">
-                <span>whenever</span>
                 <option>https://www.google.com</option>
                 <option>https://www.bing.com</option>
               </select>
@@ -96,8 +95,8 @@
       style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
       <img style="min-width: 100%;" src="assets/orgimg/globe.png">
     </button>
-    <button id ="btn2" 
-    style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
+    <button id="btn2"
+      style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
       <img style="min-width: 100%;" src="assets/orgimg/note.png">
     </button>
     <button onclick="closeAllWindows()"
@@ -122,7 +121,7 @@
   <div id="greetings-container"></div>
 
   <!-- h1 -->
-  <div class="window dragdiv lang" style="top: 317px; left: 1200px;">
+  <div class="window dragdiv lang" style="top: 420px; left: 1100px;">
     <div class="title-bar">
       <div class="title-bar-text">
         Hello World
@@ -175,7 +174,7 @@
     </div>
   </div>
   <!-- h4 -->
-  <div class="window dragdiv lang" style="top: 405px; left: 259px;">
+  <div class="window dragdiv lang" style="top: 65vh; left: 260px;">
     <div class="title-bar">
       <div class="title-bar-text">
         Olá, mundo!
@@ -193,10 +192,10 @@
     </div>
   </div>
   <!-- h5 -->
-  <div class="window dragdiv lang" style="top: 572px; left: 1221px;">
+  <div class="window dragdiv lang" style="top: 70vh; left: 1221px;">
     <div class="title-bar">
       <div class="title-bar-text">
-        Olá, mundo!
+        नमस्ते दुनिया
       </div>
 
       <div class="title-bar-controls notranslate">
@@ -214,6 +213,32 @@
 
   <div style="height: 100vh;"></div>
 
+  <div speech-bubble pbottom aright style="top:300px; right: 90px">
+    <div style=" display: flex; flex-direction: row;  align-items:center">
+      <div class="infoicon" style=""></div>
+      <div class="title-bar-txt">Side Nav</div>
+    </div>
+    <div class="window-txt">
+      <br>
+      <li>Globe Button: jump to the globe section.</li>
+      <li>Article Button: jump to the article section.</li>
+      <li>Recycle Button: close all pop-up windows.</li>
+    </div>
+  </div>
+
+  <div speech-bubble pbottom aright style="top:100px; left: 25vw">
+    <div style=" display: flex; flex-direction: row;  align-items:center">
+      <div class="infoicon" style=""></div>
+      <div class="title-bar-txt">Globe</div>
+    </div>
+    <div class="window-txt">
+      <br>
+      <li>Click landmarks and satellites to check programming lanaguage info.</li>
+      <li>Click and drag the globe to rotate.</li>
+      <li>Zoom in/out by the mouse wheel.</li>
+    </div>
+  </div>
+
   <div id="section2"></div>
 
   <div id="externalContent"></div>
@@ -229,13 +254,13 @@
 
   </script>
 
-  <div class="editor">
+  <!-- <div class="editor">
     <div id="lineNumbers" class="line-numbers"></div>
     <div id="code" class="code" contenteditable="true">
       line 1
       line 2
     </div>
-  </div>
+  </div> -->
 
 </body>
 
@@ -245,9 +270,9 @@
 <script>
 
 
-//sideNav
+  //sideNav
 
-function smoothScroll(target, duration) {
+  function smoothScroll(target, duration) {
     var targetElement = document.querySelector(target);
     var targetPosition = targetElement.getBoundingClientRect().top;
     var startPosition = window.pageYOffset;
@@ -255,31 +280,31 @@ function smoothScroll(target, duration) {
     var startTime = null;
 
     function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        var timeElapsed = currentTime - startTime;
-        var run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
+      if (startTime === null) startTime = currentTime;
+      var timeElapsed = currentTime - startTime;
+      var run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
     }
 
     function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
     }
 
     requestAnimationFrame(animation);
-}
-document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('btn1').addEventListener('click', function() {
-          smoothScroll('#section1', 1000); // Scroll over 1000 milliseconds (1 second)
-        });
-
-        document.getElementById('btn2').addEventListener('click', function() {
-          smoothScroll('#section2', 500); // Scroll over 1000 milliseconds (1 second)
-        });
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('btn1').addEventListener('click', function () {
+      smoothScroll('#section1', 1000); // Scroll over 1000 milliseconds (1 second)
     });
+
+    document.getElementById('btn2').addEventListener('click', function () {
+      smoothScroll('#section2', 500); // Scroll over 1000 milliseconds (1 second)
+    });
+  });
 
   function closeAllWindows() {
     var windows = document.querySelectorAll('.dragdiv'); // Assuming dragdiv is the class for draggable windows
