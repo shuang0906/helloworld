@@ -506,7 +506,7 @@ scene.add(satelliteLayer);
 const canvas = document.getElementById("bg");
 const ctx = canvas.getContext("2d");
 canvas.width = 1700;
-canvas.height = 800;
+canvas.height = 1000;
 const matrix = new DOMMatrix([1, 0, 0, 1, 0, 0]);
 
 const imageUrls = [
