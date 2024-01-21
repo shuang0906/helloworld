@@ -374,7 +374,11 @@ bodycopy a.icon-link:hover {
 }
 
 h1 {
+<<<<<<< HEAD
   /* font-family: "Times New Roman";
+=======
+  font-family: "Times New Roman";
+>>>>>>> bd62261ad6aee0aee5b3ee72483c137a1d700ba1
   font-style: normal;
   font-weight: 700; */
   padding: 0;
