@@ -512,6 +512,9 @@ const matrix = new DOMMatrix([1, 0, 0, 1, 0, 0]);
 const imageUrls = [
 
   "assets/bg/5.gif",
+  "assets/bg/b10.pn",
+  "assets/bg/2.jpg",
+  "assets/bg/11.jpg",
   "assets/bg/b1.png",
   "assets/bg/b7.jpg",
   "assets/bg/3.gif",

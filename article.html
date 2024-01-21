@@ -1,225 +1,23 @@
-
+<div class="editor">
+    <!-- <div id="lineNumbers" class="line-numbers"></div> -->
+    <!-- <div id="code" class="code">
+        testElement1
+        testElement2
+    </div> -->
+</div>
 
 <div class="article">
     <div id="section1"><br><br></div>
     <div grid-row="" grid-pad="0" grid-gutter="0">
-        <div grid-col="1" grid-pad="0" class="">
-            <small>1
-                <br>
-                2
-                <br>
-                3
-                <br>
-                4
-                <br>
-                5
-                <br>
-                6
-                <br>
-                7
-                <br>
-                8
-                <br>
-                9
-                <br>
-                10
-                <br>
-                11
-                <br>
-                12
-                <br>
-                13
-                <br>
-                14
-                <br>
-                15
-                <br>
-                16
-                <br>
-                17
-                <br>
-                18
-                <br>
-                19
-                <br>
-                20
-                <br>
-                21
-                <br>
-                22
-                <br>
-                23
-                <br>
-                24
-                <br>
-                25
-                <br>
-                26
-                <br>
-                27
-                <br>
-                28
-                <br>
-                29
-                <br>
-                30
-                <br>
-                31
-                <br>
-                32
-                <br>
-                33
-                <br>
-                34
-                <br>
-                35
-                <br>
-                36
-                <br>
-                37
-                <br>
-                38
-                <br>
-                39
-                <br>
-                40
-                <br>
-                41
-                <br>
-                42
-                <br>
-                43
-                <br>
-                44
-                <br>
-                45
-                <br>
-                46
-                <br>
-                47
-                <br>
-                48
-                <br>
-                49
-                <br>
-                50
-                <br>
-                51
-                <br>
-                52
-                <br>
-                53
-                <br>
-                54
-                <br>
-                55
-                <br>
-                56
-                <br>
-                57
-                <br>
-                58
-                <br>
-                59
-                <br>
-                60
-                <br>
-                61
-                <br>
-                62
-                <br>
-                63
-                <br>
-                64
-                <br>
-                65
-                <br>
-                66
-                <br>
-                67
-                <br>
-                68
-                <br>
-                69
-                <br>
-                70
-                <br>
-                71
-                <br>
-                72
-                <br>
-                73
-                <br>
-                74
-                <br>
-                75
-                <br>
-                76
-                <br>
-                77
-                <br>
-                78
-                <br>
-                79
-                <br>
-                80
-                <br>
-                81
-                <br>
-                82
-                <br>
-                83
-                <br>
-                84
-                <br>
-                85
-                <br>
-                86
-                <br>
-                87
-                <br>
-                88
-                <br>
-                89
-                <br>
-                90
-                <br>
-                91
-                <br>
-                92
-                <br>
-                93
-                <br>
-                94
-                <br>
-                95
-                <br>
-                96
-                <br>
-                97
-                <br>
-                98
-                <br>
-                99
-                <br>
-                100</small>
-            <br>
+        <div grid-col="1" grid-pad="0">
+            <small id="lineNumbers" class="line-numbers"></small>
         </div>
         <div grid-col="3" grid-pad="0" class="">
         </div>
-        <div grid-col="7" grid-pad="0" class="">
-            <h1>
-                Coding Is for Everyone—<br>as Long as You Speak English
-            </h1>
-            <br>
-            <h3>
-                Gretchen McCulloch
-            </h3>
-            <br>
-            <br>
-
-            <h2>THIS YEAR MARKS the 30th anniversary of the World Wide Web, so there's been a lot of pixels spilled on
-                "the initial promises of the web"—one of which was the idea that you could select "view source" on any
+        <div grid-col="7" grid-pad="0" id="code" class="code">
+            <h2 >THIS YEAR MARKS the 30th anniversary of the World Wide Web, so there's been a lot
+                of pixels spilled on "the initial promises of the web"—one of which was the idea that you could select
+                "view source" on any
                 page and easily teach yourself what went into making it display like that. <a
                     href="https://glitch.com/culture/the-web-is-30-hbd/" target="_blank">Here's the very first
                     webpage</a>, reproduced by the <a
@@ -227,13 +25,14 @@
                     href="https://www.wired.com/tag/coding/">programming</a> website Glitch in honor of the anniversary,
                 to point out that you can switch to the source view and see that certain parts are marked up with
             </h2>
-            <blockquote><small>&lt;title&gt;
-                    and <br>
-                    &lt;body&gt; and <br>
-                    &lt;p&gt; (which you might be able to guess stands for "paragraph").</small></blockquote>
-            <h2>&nbsp;Looks pretty straightforward—but you're reading this on an English website, from the perspective
-                of an English speaker.<br>
-                <br>
+            <pre
+                style="min-width: 500px"><code><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&lt;!--and--&gt;</code>
+<code><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>&lt;!--and--&gt;</code>
+<code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&lt;!--which you might be able to guess stands for "paragraph"--&gt;</code></pre>
+
+            <h2>Looks pretty straightforward—but you're reading this on an English website, from the perspective
+                of an English speaker.
+                <br><br>
                 Now, imagine that this was the first webpage you'd ever seen, that you were excited to peer under the
                 hood and figure out how this worked. But instead of the labels being familiar words, you were faced with
                 <a href="https://glitch.com/edit/#!/first-website-russian?path=index.html:2:11" rel="nofollow noopener"
@@ -241,14 +40,16 @@
                 the source code is based on Russian rather than English. I don't speak Russian, and assuming you don't
                 either, does
             </h2>
-            <blockquote><small>&lt;заголовок&gt; and <br>
-                    &lt;заглавие&gt; and <br>
-                    &lt;тело&gt; and <br>
-                    &lt;п&gt; still feel like something you want to tinker with?</small></blockquote>
-            <h2><br>
+            <pre
+                style="min-width: 500px"><code><span class="hljs-tag">&lt;<span class="hljs-name">заголовок</span>&gt;</span>&lt;!--and--&gt;</code>
+<code><span class="hljs-tag">&lt;<span class="hljs-name">тело</span>&gt;</span>&lt;!--and--&gt;</code>
+<code><span class="hljs-tag">&lt;<span class="hljs-name">п</span>&gt;</span>&lt;!-- still feel like something you want to tinker with?--&gt;</code></pre>
+<br><br>
+            <h2>
                 In theory, you can make a programming language out of any symbols. The computer doesn't care. The
                 computer is already running an invisible program (a compiler) to translate your </h2>
             <blockquote><small>IF or &lt;body&gt;</small></blockquote>
+
             <h2> into the 1s and 0s that it functions in, and it would function just as effectively if we used a potato
                 emoji* to stand for </h2>
             <blockquote><small>IF</small></blockquote>
@@ -617,7 +418,7 @@
                 the non-English-speaking world? How do we make the web as tinker-friendly for the people who are joining
                 it now (or who have been using it as a consumer for the past decade) as it was for its earliest
                 arrivals?<br>
-    
+
                 Here's why I still have hope. In medieval Europe, if you wanted to access the technology of writing, you
                 had to acquire a new language at the same time. Writing meant Latin. Writing in the vernacular—in the
                 mother tongues, in languages that people already spoke—was an obscure, marginalized sideline. Why would
