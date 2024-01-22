@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+  </body>
+</html>
+
+<style>
+  html body{
+      overflow: hidden !important;
+  }
+
+</style>
+
+<script>
+
+let myfont;
+let hiArray;
+let myFontSize = 350;
+let r = 0;
+
+function preload(){
+    myfont = loadFont('test.otf');
+}
+
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(250);
+    textFont(myfont);
+    textSize(myFontSize);
+
+    let txt = "4";
+    // Set the font and calculate the width of the text
+    let textW = textWidth(txt); // Use the standalone textWidth function
+    // Adjust the position to center the text
+    hiArray = myfont.textToPoints(txt, (width - textW) / 2, height / 2 + myFontSize / 3, myFontSize);
+}
+
+function draw() {
+    colorMode(HSB);
+    background(frameCount % 255, 100, 100);
+
+    for (let i = 0; i < hiArray.length; i++) {
+        push();
+        translate(hiArray[i].x, hiArray[i].y);
+        scale(0.5+mouseX/300);
+        rotate(r);
+        r += 0.0002;
+        strokeWeight(0.85);
+        fill("yellow");
+        rect(0, 0, 8, 40);
+        pop();
+    }
+}
+
+</script> 

@@ -168,14 +168,16 @@
 }
 
 .code {
+  line-height: 16px !important;
   /* white-space: pre-wrap;  */
   word-wrap: break-word;
   overflow-wrap: break-word;
+  
 }
 
 .line-numbers {
   text-align: left;
-  line-height: 40px;
+  line-height: 42px;
   margin-left: 20px; /* Spacing between line numbers and code */
   user-select: none; /* Prevents selection of line numbers */
 }
@@ -426,7 +428,17 @@ body {
   font-size: 5dvb !important;
   text-shadow: 0.03em 0.03em 0 rgba(0, 0, 0, 0.24);
   flex-direction: column;
-  align-items: start !important;
-  justify-content: ;
-  
+  align-items: start !important;  
 }
+
+.box{
+  font-family: "Times New Roman"!important;
+  font-size: 1.5em;
+  background: #fff;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  display: block;
+  margin: 0;
+  padding: 12px 8px;
+}
+
+

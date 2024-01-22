@@ -315,6 +315,7 @@ hr {
 
 .gallery_image_caption {
   text-align: center;
+  word-wrap: break-word;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
@@ -373,10 +374,7 @@ bodycopy a.icon-link:hover {
   padding-bottom: 0;
 }
 
-h1 {
-  /* font-family: "Times New Roman";
-  font-style: normal;
-  font-weight: 700; */
+.title h1 {
   padding: 0;
   margin: 0;
   font-size: 7vmin;
@@ -411,7 +409,7 @@ h2 a {
 small {
   display: inline-block;
   vertical-align: baseline;
-  line-height: 1.2;
+  line-height: 42px;
   -webkit-font-smoothing: none;
   font-family: "Pixelated MS Sans Serif", Arial;
   font-size: 15px;
@@ -426,18 +424,27 @@ small a {
   border-bottom-width: 0em;
 }
 
-h3 {
-  font-style: bold;
+.article p {
+  display: inline-block;
+  vertical-align: baseline;
+  /* font-family: "utopia-std-caption", serif;
+  font-style: normal;
+  font-weight: 600;  */
+  font-family: "Times New Roman", serif;
+  font-weight: 400; 
   padding: 0;
   margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  color: black;
+  color: rgba(0, 0, 0, 1);
+  font-size: 2rem;
+  line-height: 42px;
 }
 
-h3 a {
-  color: rgba(0, 56, 255, 1);
+p a {
+  color: rgba(0, 8, 255, 0.85);
 }
+
+pre{
+  margin: 8px 0;}
 
 /**
  * Breakpoints
@@ -2882,7 +2889,7 @@ img[src=""] {
 }
 [data-draggable] {
   visibility: visible;
-  background-color: rgba(0, 0, 0, 0.003);
+  /* background-color: rgba(0, 0, 0, 0.003); */
 }
 #site_menu_panel_container .image-gallery:not(.initialized) {
   height: 0;
@@ -3673,4 +3680,14 @@ bodycopy svg.marker-overlay a {
 }
 .cycle {
   display: none;
+}
+
+.www h1 { 
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }

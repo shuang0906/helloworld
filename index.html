@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="article.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5.glitch@latest/p5.glitch.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
@@ -108,7 +108,7 @@
   </div>
 
   <!-- translate -->
-  <div class="window" id="google_translate_element"></div>
+  <!-- <div class="window" id="google_translate_element"></div> -->
 
   <div id="section1"></div>
 
@@ -121,9 +121,6 @@
     <div id="globeViz"></div>
   </div>
   <script type="module" src="globe.js"></script>
-
-  <!-- greeting -->
-  <div id="greetings-container"></div>
 
   <!-- h1 -->
   <div class="window dragdiv lang" style="top: 420px; right: 150px;">
@@ -298,8 +295,6 @@
 
   <div id="section2"></div>
 
-
-
   <div id="externalContent"></div>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -310,15 +305,367 @@
         })
         .catch(error => console.error('Error loading external content:', error));
     });
-
   </script>
 
+  <div class="window dragdiv lang" style="top: 135vh; left: 50px; max-width: 28vw ;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/html-16x16.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">World Wide Web</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents; user-select: text !important;">
+      <ul class="box www">
+        <H1>World Wide Web</H1>The WorldWideWeb (W3) is a wide-area<A NAME=0 HREF="WhatIs.html">
+          hypermedia</A> information retrieval
+        initiative aiming to give universal
+        access to a large universe of documents.<P>
+          Everything there is online about
+          W3 is linked directly or indirectly
+          to this document, including an <A NAME=24 HREF="Summary.html">executive
+            summary</A> of the project, <A NAME=29 HREF="Administration/Mailing/Overview.html">Mailing lists</A>
+          , <A NAME=30 HREF="Policy.html">Policy</A> , November's <A NAME=34 HREF="News/9211.html">W3 news</A> ,
+          <A NAME=41 HREF="FAQ/List.html">Frequently Asked Questions</A> .
+        <DL>
+          <DT><A NAME=44 HREF="../DataSources/Top.html">What's out there?</A>
+          <DD> Pointers to the
+            world's online information,<A NAME=45 HREF="../DataSources/bySubject/Overview.html"> subjects</A>
+            , <A NAME=z54 HREF="../DataSources/WWW/Servers.html">W3 servers</A>, etc.
+          <DT><A NAME=46 HREF="Help.html">Help</A>
+          <DD> on the browser you are using
+          <DT><A NAME=13 HREF="Status.html">Software Products</A>
+          <DD> A list of W3 project
+            components and their current state.
+            (e.g. <A NAME=27 HREF="LineMode/Browser.html">Line Mode</A> ,X11 <A NAME=35 HREF="Status.html#35">Viola</A>
+            , <A NAME=26 HREF="NeXT/WorldWideWeb.html">NeXTStep</A>
+            , <A NAME=25 HREF="Daemon/Overview.html">Servers</A> , <A NAME=51 HREF="Tools/Overview.html">Tools</A> ,<A
+              NAME=53 HREF="MailRobot/Overview.html"> Mail robot</A> ,<A NAME=52 HREF="Status.html#57">
+              Library</A> )
+          <DT><A NAME=47 HREF="Technical.html">Technical</A>
+          <DD> Details of protocols, formats,
+            program internals etc
+          <DT><A NAME=40 HREF="Bibliography.html">Bibliography</A>
+          <DD> Paper documentation
+            on W3 and references.
+          <DT><A NAME=14 HREF="People.html">People</A>
+          <DD> A list of some people involved
+            in the project.
+          <DT><A NAME=15 HREF="History.html">History</A>
+          <DD> A summary of the history
+            of the project.
+          <DT><A NAME=37 HREF="Helping.html">How can I help</A> ?
+          <DD> If you would like
+            to support the web..
+          <DT><A NAME=48 HREF="../README.html">Getting code</A>
+          <DD> Getting the code by<A NAME=49 HREF="LineMode/Defaults/Distribution.html">
+              anonymous FTP</A> , etc.</A>
+        </DL>
+      </ul>
+    </div>
+  </div>
 
+  <div class="window dragdiv lang" style="top: 190vh; right: 50px; max-width: 28vw;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/notepad-32x32.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Всемирная_паутина.htm</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;user-select: text !important;">
+      <ul class="box www" style="height: 400px; overflow: scroll">
+        <заголовок>
+        <заглавие>The World Wide Web project</заглавие>
+        <следующийид Ч="55">
+        </заголовок>
+        <тело>
+        <з1>World Wide Web</з1>The WorldWideWeb (W3) is a wide-area<я
+        название=0 гссыл="WhatIs.ягтр"> 
+        hypermedia</я> information retrieval
+        initiative aiming to give universal
+        access to a large universe of documents.<п>
+        Everything there is online about
+        W3 is linked directly or indirectly
+        to this document, including an <я
+        название=24 гссыл="Summary.ягтр">executive
+        summary</я> of the project, <я
+        название=29 гссыл="Administration/Mailing/Overview.ягтр">Mailing lists</я>
+        , <я
+        название=30 гссыл="Policy.ягтр">Policy</я> , November's  <я
+        название=34 гссыл="News/9211.ягтр">W3  news</я> ,
+        <я
+        название=41 гссыл="FAQ/List.ягтр">Frequently Asked Questions</я> .
+        <ос>
+        <оу><я
+        название=44 гссыл="../DataSources/Top.ягтр">What's out there?</я>
+        <DD> Pointers to the world's online information,<я
+        название=45 гссыл="../DataSources/bySubject/Overview.ягтр"> subjects</я>
+        , <я
+        название=z54 гссыл="../DataSources/WWW/Servers.ягтр">W3 servers</я>, etc.
+        <оу><я
+        название=46 гссыл="Help.ягтр">Help</я>
+        <оо> on the browser you are using
+        <оу><я
+        название=13 гссыл="Status.ягтр">Software Products</я>
+        <оо> A list of W3 project components and their current state.
+        (e.g. <я
+        название=27 гссыл="LineMode/Browser.ягтр">Line Mode</я> ,X11 <я
+        название=35 гссыл="Status.ягтр#35">Viola</я> ,  <яназвание=26 гссыл="NeXT/WorldWideWeb.ягтр">NeXTStep</я>
+        , <яназвание=25 гссыл="Daemon/Overview.ягтр">Servers</я> , <я
+        название=51 гссыл="Tools/Overview.ягтр">Tools</я> ,<Aназвание=53 гссыл="MailRobot/Overview.ягтр"> Mail robot</я> ,<яназвание=52 гссыл="Status.ягтр#57">
+        Library</я> )
+        <оу><яназвание=47 гссыл="Technical.ягтр">Technical</я>
+        <оо> Details of protocols, formats, program internals etc
+        <оу><я
+        название=40 гссыл="Bibliography.ягтр">Bibliography</я>
+        <оо> Paper documentation on  W3 and references.
+        <оу><я
+        название=14 гссыл="People.ягтр">People</я>
+        <оо> A list of some people involved in the project.
+        <оу><я
+        название=15 гссыл="History.ягтр">History</я>
+        <оо> A summary of the history of the project.
+        <оу><я
+        название=37 гссыл="Helping.ягтр">How can I help</я> ?
+        <оо> If you would like to support the web..
+        <оу><я
+        название=48 гссыл="../ридми.ягтр">Getting code</я>
+        <оо> Getting the code by<я
+        название=49 гссыл="LineMode/Defaults/Distribution.ягтр">
+        anonymous FTP</я> , etc.</я>
+        </ос>
+        </тело>
 
+      </ul>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 370vh; right: 50px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/file_lines-1.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">The Widely-Spoken Languages We Still Can’t Translate Online</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <a target="_blank" href="https://www.wired.com/story/google-translate-wikipedia-siri-widely-spoken-languages-cant-translate/">
+        <img  width="600" src="https://media.wired.com/photos/5bf5659da41e1d7983caf368/125:94/w_2375,h_1786,c_limit/Ideas_Art_Translate-870441446.jpg">
+      </a>  
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 440vh; right: 100px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/file_lines-1.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Learning to Code in One’s Own Language Research</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents; ">
+      <a target="_blank" href="https://mako.cc/copyrighteous/scratch-localization-and-learning">
+        <img width="550" src="https://mako.cc/copyrighteous/wp-content/uploads/2017/06/localization-results.png">
+      </a>    
+    </div>
+    <div class="status-bar">
+      <p class="status-bar-field">BENJAMIN MAKO HILL</p>
+      <p class="status-bar-field">JUNE 26, 2017</p>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 385vh; right: 100px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/paint-16x16.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Four(4)</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <iframe width="300px" height="400px" src="four.html"></iframe>    
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 500vh; right: 100px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/file_lines-1.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Excel Turing Machine
+      </span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents; ">
+      <a target="_blank" href="https://www.felienne.com/archives/2974">
+        <img width="550" src="https://freight.cargo.site/w/1038/q/75/i/ef3f879208db670f551c912ab0e17488567da8821f28b1c514e3ccb674e24514/conditional_formatting.png">
+      </a>    
+    </div>
+    <div class="status-bar">
+      <p class="status-bar-field"> Felienne Hermans</p>
+      <p class="status-bar-field">September 19, 2013</p>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 620vh; right: 100px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/notepad-32x32.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Hello_World_Chinese_Python.txt</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <div class="field-row-stacked" style="width: 300px;">
+        <textarea id="text20" rows="9">
+$ zhpy
+>>> 印出 "哈囉，世界" #支援繁中
+哈囉，世界
+>>> 印出 "你好，世界" #支持简中
+你好，世界
+>>> print "hello world" #支持英文
+hello world        
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 630vh; right: 50px; max-width: 28vw;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/notepad-32x32.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Hello_World_Qalb.txt</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <div class="field-row-stacked" style="">
+        <textarea id="text20" rows="8">
+(قول مرحبا يا عالم&quot;‏)
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 660vh; right: 300px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/notepad-32x32.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Hello_World_Эль-76.txt</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <div class="field-row-stacked" style="width: 400px;">
+        <textarea id="text20" rows="10">
+программа
+процедура передатьпривет = проц(ф32 числоприветов)
+начало
+если числоприветов = 0 то
+печатьмс(стр8 "МИР не получил ни одного привета!")
+инес числоприветов = 1 то
+печатьмс(стр8 "В МИР был отправлен всего один привет!")
+иначе
+печатьмс(стр8 "МИРУ передали несколько приветов. А если точно, то их было");
+печать(числоприветов)
+все
+конец;
+          
+печатьмс(стр8 "Привет просто так!"); % такой привет мартышка точно не потеряет
+печатькс(); % разрыв строки
+передатьпривет(100) % привет из процедуры конец</textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 800vh; right: 50px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/notepad-32x32.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Hello_World_Brainfuck.txt</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <div class="field-row-stacked" style="width: 300px;">
+        <textarea id="text20" rows="8">
+++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++
+..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+        </textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 837vh; right: 280px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/notepad-32x32.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Hello_World_Pikachu.txt</span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents;">
+      <div class="field-row-stacked" style="width: 400px;">
+        <textarea id="text20" rows="40">
+pikachu pika pikachu pika pika pi pi pika pikachu pika pikachu pi pikachu pi pikachu pi pika pi pikachu pikachu pi pi pika pika pikachu pika pikachu pikachu pi pika pi pika pika pi pikachu pikachu pi pikachu pi pika pikachu pi pikachu pika pikachu pi pikachu pikachu pi pikachu pika pika pikachu pi pikachu pi pi pikachu pikachu pika pikachu pi pika pi pi pika pika pikachu pikachu pi pi pikachu pi pikachu
+        pikachu pikachu pi pikachu
+pikachu pika pika pikachu pika pikachu pikachu pika pika pikachu pikachu pi pi pikachu pika pikachu pika pika pi pika pikachu pikachu pi pika pika pikachu pi pika pi pika pi pikachu pi pikachu pika pika pi pi pika pi pika pika pikachu pikachu pika pikachu pikachu pika pi pikachu pika pi pikachu pi pika pika pi pikachu pika pi pika pikachu pi pi pikachu pika pika pi pika pi pikachu
+pikachu pikachu pi pikachu
+pikachu pika pi pika pika pikachu pika pikachu pi pikachu pi pi pika pi pikachu pika pi pi pika pikachu pi pikachu pi pi pikachu pikachu pika pikachu pikachu pika pi pikachu pi pika pikachu pi pikachu pika pika pikachu pika pi pi pikachu pikachu pika pika pikachu pi pika pikachu pikachu pi pika pikachu pikachu pika pi pi pikachu pikachu pi pikachu pi pikachu pi pikachu pi pika pikachu pi pikachu pika pikachu pi pika pi pikachu
+          pi pika
+pikachu pikachu pi pikachu
+pika pi
+          pikachu pikachu pi pikachu
+pikachu pi pikachu pi pi pikachu pi pikachu pika pikachu pikachu pi pikachu pikachu pika pi pi pika pikachu pika pikachu pi pi pikachu pika pi pi pikachu pika pika pi pika pika pikachu pika pikachu pi pi pika pikachu pika pi pikachu pikachu pi pikachu pika pikachu pikachu pika pi pi pikachu pikachu pi pika pikachu pi pikachu pika pikachu pikachu pika pi pikachu pikachu pika pikachu pi pikachu pika pika pi pikachu pi pika pi pikachu pikachu pi pikachu
+          pi pika
+          pikachu pikachu pi pikachu
+pikachu pikachu pi pika pikachu pi pika pika pi pi pika pi pikachu pi pika pi pika pi pika pikachu pika pi pi pikachu pi pikachu pi pika pi pika pika pikachu pi pikachu
+pikachu pikachu pi pikachu
+          pikachu pi pikachu pika pikachu pi pika pi pikachu pikachu pika pika pi pi pikachu pi pika pi pikachu pi pika pikachu pi pika pi pi pikachu pikachu pika pika pikachu pikachu pi pi pikachu pi pikachu pi pikachu pi pi pikachu pikachu pi pikachu pi pikachu pi pika pika pikachu pikachu pika pi pika pikachu pi pikachu pi pi pika pikachu pika pi pikachu pi pika pi pi pikachu pikachu pika pika pikachu pika pika pikachu pi pika pi pika pikachu pi pika pikachu pika pi pika pikachu
+          
+pikachu pikachu pika pikachu
+pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu pi pi pikachu pi pika pi pika pikachu pi pikachu pi pikachu pikachu pi pi pika pika pi pika pika pi pika pikachu pikachu p
+          pikachu pikachu pika pikachu
+          i pikachu pika pi pi pika pi pi pikachu pikachu pika pi pi pika pika pi pika pikachu pi pikachu pi pi pika pi pika pika pikachu pika pi pika pikachu pi pikachu pikachu pi pi pika pi pika pika pikachu pikachu pi pikachu
+          pikachu pikachu pi pikachu
+          pikachu pi pikachu pikachu pika pikachu pikachu pika pika pikachu pikachu pika pikachu pi pika pikachu pika pika pi pikachu pi pi pika pi pi pikachu pika pika pikachu pikachu
+          </textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="window dragdiv lang" style="top: 1110vh; left: 50px;">
+    <div class="title-bar">
+      <div style="display: flex; align-items: center;"><img src="assets/orgimg/image_old_jpeg-1.png" width="16"><span class="title-bar-text" style="margin-left: 4px;">Coding_Is_for_Everyone_as_Long_as_You_Speak_English.jpg
+      </span></div>
+      <div class="title-bar-controls notranslate">
+        <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
+        <button aria-label="Close" onclick="closeWindow(this)"></button>
+      </div>
+    </div>
+    <div class="window-body" style="display:contents; ">
+      <a target="_blank" href="https://www.felienne.com/archives/2974">
+        <img width="600" src="https://media.wired.com/photos/5ca7e7fce903a149797c4516/125:94/w_2375,h_1786,c_limit/Ideas_Art_Languages-899643860.jpg">      </a>    
+    </div>
+  </div>
+
+  <!-- greeting -->
+  <div id="greetings-container"></div>
+  
 </body>
-
 </html>
-
 
 <script>
 
@@ -370,8 +717,6 @@
       }, 500); // This should match the duration of the closing animation
     });
   }
-
-
 
   // Get current date and time
   // var now = new Date();
@@ -557,14 +902,17 @@
   }
 
   //-------------------------editor
-  function updateLineNumbers() {
-    const code = document.getElementById('code');
-    const lineNumbers = document.getElementById('lineNumbers');
-    const lineHeight = parseInt(window.getComputedStyle(code).lineHeight, 10);
+  //29 95     21 49      16 44
+  function updateLineNumbers(codeId, lineNumbersId) {
+    const code = document.getElementById(codeId);
+    const lineNumbers = document.getElementById(lineNumbersId);
+    const lineHeight = 42; // Assuming a fixed line height
 
     // Create a test element to calculate the height
     const testElement = document.createElement('div');
     testElement.style.width = code.offsetWidth + 'px';
+    console.log("code.offsetWidth " + code.offsetWidth);
+
     testElement.style.font = window.getComputedStyle(code).font;
     testElement.style.visibility = 'hidden';
     testElement.style.position = 'absolute';
@@ -574,60 +922,51 @@
     document.body.appendChild(testElement);
 
     // Calculate the number of lines
-    const numberOfLines = Math.ceil(testElement.offsetHeight / lineHeight);
+    const numberOfLines = Math.ceil(testElement.clientHeight / lineHeight);
+    console.log("testElement.clientHeight " + testElement.clientHeight);
     document.body.removeChild(testElement);
 
     // Update the line numbers
-    lineNumbers.innerHTML = Array.from({ length: numberOfLines }, (_, i) => i + 1).join('<br>');
+    lineNumbers.innerHTML = Array.from({ length: numberOfLines + 28 }, (_, i) => i + 1).join('<br>');
   }
 
-  window.onload = updateLineNumbers;
-  window.addEventListener('resize', updateLineNumbers);
-</script>
+  function updateLineNumbersa(codeId, lineNumbersId) {
+    const code = document.getElementById(codeId);
+    const lineNumbers = document.getElementById(lineNumbersId);
+    const lineHeight = 42; // Assuming a fixed line height
 
-<!-- <script>
+    // Create a test element to calculate the height
+    const testElement = document.createElement('div');
+    testElement.style.width = code.offsetWidth + 'px';
+    console.log("code.offsetWidth " + code.offsetWidth);
+
+    testElement.style.font = window.getComputedStyle(code).font;
+    testElement.style.visibility = 'hidden';
+    testElement.style.position = 'absolute';
+    testElement.style.whiteSpace = 'pre-wrap';
+    testElement.style.wordWrap = 'break-word';
+    testElement.textContent = code.textContent || code.innerText;
+    document.body.appendChild(testElement);
+
+    // Calculate the number of lines
+    const numberOfLines = Math.ceil(testElement.clientHeight / lineHeight);
+    console.log("testElement.clientHeight " + testElement.clientHeight);
+    document.body.removeChild(testElement);
+
+    // Update the line numbers
+    lineNumbers.innerHTML = Array.from({ length: numberOfLines + 62 }, (_, i) => i + 1).join('<br>');
+  }
 
   window.onload = function () {
-    var backgroundImg = [
-      "https://freight.cargo.site/w/315/i/71cf8d01d7b861b6fd411b9a3ac3eeffdb906a8dcb56044f362a16a18fd95291/Backgrounds.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/24.gif",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_3.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/35.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_1.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_23.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_3.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_5.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_2.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_17.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_15.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_25.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_18.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_20.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_21.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_22.jpg",
-      "http://cs.gettysburg.edu/~duncjo01/archive/patterns/gdpit/Sky/b_24.jpg",
+    updateLineNumbers('code', 'lineNumbers'); // Update this with the correct IDs
+    updateLineNumbersa('codea', 'lineNumbersa'); // Update this with the correct IDs
+    updateLineNumbers('codeb', 'lineNumbersb'); // Update this with the correct IDs
 
-      /*
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxUi-tnLg7bksj9aU3WT0p9pNdaeyyt15T_mwlEiFEIRie1S_-CEGus4VECYaQQQQ7818&usqp=CAU",
-      "https://64.media.tumblr.com/31ccc2317072f0c8404b4a78c17e6e53/e9e22e92578d6d23-6d/s400x600/322377fdb12bd4cd9bea4d7cb408eb8dc0da277f.png",
-      "https://44.media.tumblr.com/98db6ef8e77d036075b8f351902bb58d/485d779385c544e4-69/s250x400_f1/8479f82ed60a5e294e8ef2bed1eade9392abd03d.gif",
-      "https://64.media.tumblr.com/6455faa31c46d913d0562feaef1906ae/3930eb25d2f43a09-a0/s250x400/173471551b427cfec06406b67b9367138cf16a6f.png",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCTQMXTogafLaua-Xd_YYTQ5umRgRh8CCHldadWGcWub0G6xFhBUjAkcpvRpy1nrunJI&usqp=CAU",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmkLFkcRfrYySnXh4UJOVz60KeDbgpQZkM6Q&usqp=CAU",
-      "https://64.media.tumblr.com/f52ddf6a216fdc5fb9d4eca8f27c8eec/782d8db93ae19c51-b2/s250x400/62877c4fd5d3b407c3d742a0c2f0ff774687b2ae.png",
-      "https://www.geocities.ws/ratusnorvegicus/electricwaves.gif",
-      "https://64.media.tumblr.com/af6da3feaa34ecc7bb2b36d877e4a235/782d8db93ae19c51-b7/s250x400/8122a57141958bd9b065d3b246621c59f116e081.png",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBrcGcL25B94IM9dV5rAGieXaw2uHwHZ-tg&usqp=CAU",
-      "https://untroubled.org/backgrounds/red/flames.jpg"*/
-    ]
+  };
 
-    setInterval(changeImage, 10000);
-
-    function changeImage() {
-      var i = Math.floor((Math.random() * backgroundImg.length));
-
-      document.body.style.backgroundImage = "url('" + backgroundImg[i] + "')";
-
-    }
-  }
-</script> -->
+  window.addEventListener('resize', function () {
+    updateLineNumbers('code', 'lineNumbers'); // Update this with the correct IDs
+    updateLineNumbersa('codea', 'lineNumbersa'); // Update this with the correct IDs
+    updateLineNumbers('codeb', 'lineNumbersb'); // Update this with the correct IDs
+  });
+</script>
