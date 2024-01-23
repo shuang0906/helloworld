@@ -101,6 +101,10 @@
       style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
       <img style="min-width: 100%;" src="assets/orgimg/note.png">
     </button>
+    <!-- <button id="btn3"
+      style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
+      <img style="min-width: 100%;" src="assets/orgimg/reference.png">
+    </button> -->
     <button onclick="closeAllWindows()"
       style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
       <img style="min-width: 100%;" src="assets/orgimg/recycle.png">
@@ -291,11 +295,8 @@
       </div>
     </div>
   </div>
-
-  <!-- greeting -->
-  <div id="greetings-container"></div>
   
-  <div id="section2"></div>
+  <div id="sectionessay"></div>
 
   <div id="externalContent"></div>
   <script>
@@ -664,7 +665,13 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
   </div>
 
 
+  <div id="" style="height:50px;"></div>
 
+<!-- greeting -->
+<div id="greetings-container" style="width: 100%; height:100vh; background-image: url('assets/bg/b_75.gif'); ">
+</div>
+      
+<div id="sectionfoot"></div>
 </body>
 </html>
 
@@ -700,9 +707,11 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
     document.getElementById('btn1').addEventListener('click', function () {
       smoothScroll('#section1', 1000); // Scroll over 1000 milliseconds (1 second)
     });
-
     document.getElementById('btn2').addEventListener('click', function () {
-      smoothScroll('#section2', 500); // Scroll over 1000 milliseconds (1 second)
+      smoothScroll('#sectionesssay', 500); // Scroll over 1000 milliseconds (1 second)
+    });
+    document.getElementById('btn3').addEventListener('click', function () {
+      smoothScroll('#sectionfoot', 500); // Scroll over 1000 milliseconds (1 second)
     });
   });
 
