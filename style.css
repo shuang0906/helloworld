@@ -297,12 +297,12 @@ body {
   z-index: 10;
 }
 
-.tree-view{
+/* .tree-view{
   height: 100%;
   display: flex !important;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .appended-div {
   position: absolute;
