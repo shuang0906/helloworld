@@ -101,10 +101,13 @@
       style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
       <img style="min-width: 100%;" src="assets/orgimg/note.png">
     </button>
-    <!-- <button id="btn3"
-      style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
-      <img style="min-width: 100%;" src="assets/orgimg/reference.png">
-    </button> -->
+    <a href="/pdf/pdf.html" target="_blank">
+      <button id="btn3"
+        style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
+        <img style="min-width: 100%;" src="assets/orgimg/pdf.png">
+      </button>
+    </a>
+
     <button onclick="closeAllWindows()"
       style="width: 75px; height: 75px; display: flex;justify-content: center;align-items: center;padding: 10px;">
       <img style="min-width: 100%;" src="assets/orgimg/recycle.png">
@@ -163,7 +166,7 @@
     </div>
   </div>
   <!-- h3 -->
-  <div class="window dragdiv lang" style="right: 20px; top: 101px;">
+  <div class="window dragdiv lang" style="right: 20px; top: 150px;">
     <div class="title-bar">
       <div class="title-bar-text">Hola mundo!</div>
       <div class="title-bar-controls notranslate">
@@ -262,14 +265,18 @@
 
   <div style="height: 100vh;"></div>
 
-  <div id="help-icon" class="help-icon">
-    <div class="help"></div>
-    <div class="title-bar-txt" style="margin-top: 4px; margin-right:0 ;">help.exe</div>
+  <div id="help-icon" class="help-icon" style="cursor: help;">
+    <div class="">
+      <img width="100"
+        src="https://freight.cargo.site/t/original/i/70c62e57dc64fd3492f20d728e2b93c075ee223ce14445af8396b5109271ca44/globe.png">
+    </div>
+    <div class="gallery_image_caption" style="margin-top: 0;">Help.exe</div>
+    <!-- <div class="title-bar-txt" style="margin-top: 4px; margin-right:0 ;">help.exe</div> -->
   </div>
 
 
   <div class="help-layer">
-    <div speech-bubble pbottom aright style="top:300px; right: 90px">
+    <div speech-bubble pbottom aright style="top:320px; right: 90px">
       <div style=" display: flex; flex-direction: row;  align-items:center">
         <div class="infoicon" style=""></div>
         <div class="title-bar-txt">Side Nav</div>
@@ -278,11 +285,12 @@
         <br>
         <li>Click Globe Button to jump to the globe section.</li>
         <li>Click Article Button to jump to the article section.</li>
+        <li>Click Book Button to see the pdf version of the publication.</li>
         <li>Click Recycle Button to close all pop-up windows.</li>
       </div>
     </div>
 
-    <div speech-bubble pbottom aright style="top:100px; left: 25vw">
+    <div speech-bubble pbottom aright style="top:80px; left: 20vw">
       <div style=" display: flex; flex-direction: row;  align-items:center">
         <div class="infoicon" style=""></div>
         <div class="title-bar-txt">Globe</div>
@@ -466,7 +474,8 @@
   <div class="window dragdiv lang" style="top: 440vh; right: 100px;">
     <div class="title-bar">
       <div style="display: flex; align-items: center;"><img src="assets/orgimg/file_lines-1.png" width="16"><span
-          class="title-bar-text" style="margin-left: 4px;">5.Learning to Code in One’s Own Language Research</span></div>
+          class="title-bar-text" style="margin-left: 4px;">5.Learning to Code in One’s Own Language Research</span>
+      </div>
       <div class="title-bar-controls notranslate">
         <button aria-label="Minimize" onclick="minWindow(this)"></button>
         <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
@@ -741,8 +750,8 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
       </div>
     </div>
     <div class="window-body" style="display:contents; ">
-        <img width="600"
-          src="https://cdn.glitch.global/605e2a51-d45f-4d87-a285-9410ad350515/editor-screencast-loop-still.png?v=1643991748779">
+      <img width="600"
+        src="https://cdn.glitch.global/605e2a51-d45f-4d87-a285-9410ad350515/editor-screencast-loop-still.png?v=1643991748779">
     </div>
   </div>
 
@@ -758,8 +767,8 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
       </div>
     </div>
     <div class="window-body" style="display:contents; ">
-        <img width="500"
-          src="https://media.wired.com/photos/5ca7e7fce903a149797c4516/125:94/w_2375,h_1786,c_limit/Ideas_Art_Languages-899643860.jpg">
+      <img width="500"
+        src="https://media.wired.com/photos/5ca7e7fce903a149797c4516/125:94/w_2375,h_1786,c_limit/Ideas_Art_Languages-899643860.jpg">
     </div>
   </div>
 
@@ -773,8 +782,8 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
   <div class="window dragdiv lang" style="bottom: 50px; left: 50px;">
     <div class="title-bar">
       <div style="display: flex; align-items: center;"><img src="assets/orgimg/address_book_user.png" width="16"><span
-        class="title-bar-text" style="margin-left: 4px;">About Author
-      </span></div>      
+          class="title-bar-text" style="margin-left: 4px;">About Author
+        </span></div>
       <div class="title-bar-controls notranslate">
         <button aria-label="Minimize" onclick="minWindow(this)"></button>
         <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
@@ -783,13 +792,14 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
     </div>
     <div class="window-body" style="display:contents;">
       <ul class="tree-view" style="padding: 10px; display: flex; flex-direction: row;">
-        <div><img
-          height="100"
+        <div><img height="100"
             src="https://gretchenmcculloch.files.wordpress.com/2019/02/gretchen-mcculloch-author-photo-headshot-square-278-edit-x.jpg?w=1108">
         </div>
-        <div style="width: 300px;padding-left: 10px;"><a style="color: blue; text-decoration: underline;" href="https://gretchenmcculloch.com/">Gretchen McCulloch</a> is WIRED's Resident Linguist. She's
+        <div style="width: 300px;padding-left: 10px;"><a style="color: blue; text-decoration: underline;"
+            href="https://gretchenmcculloch.com/">Gretchen McCulloch</a> is WIRED's Resident Linguist. She's
           the cocreator of <em>Lingthusiasm</em>, a podcast that's enthusiastic about linguistics, and the author of
-          <em>Because Internet: Understanding the New Rules of Language.</em></div>
+          <em>Because Internet: Understanding the New Rules of Language.</em>
+        </div>
       </ul>
       <div class="status-bar">
         <p class="status-bar-field">TOPICS</p>
@@ -804,8 +814,8 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
   <div class="window dragdiv lang" style="top: 93%; right: 200px; width: 400px;">
     <div class="title-bar">
       <div style="display: flex; align-items: center;"><img src="assets/orgimg/address_book-1.png" width="16"><span
-        class="title-bar-text" style="margin-left: 4px;">Bibliography
-      </span></div>
+          class="title-bar-text" style="margin-left: 4px;">Bibliography
+        </span></div>
       <div class="title-bar-controls notranslate">
         <button aria-label="Minimize" onclick="minWindow(this)"></button>
         <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
@@ -819,7 +829,7 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
             <summary>Articles</summary>
             <ul>
               <li>Coding Is for Everyone—as Long as You Speak English, Gretchen McCulloch, WIRED</li>
-              <li>It's Time to Make Code More Tinker-Friendly, Clive Thompson, WIRED</li>              
+              <li>It's Time to Make Code More Tinker-Friendly, Clive Thompson, WIRED</li>
               <li>The Pluriverse Manifesto, Verses</li>
               <li>The Widely-Spoken Languages We Still Can’t Translate Online, Gretchen McCulloch, WIRED</li>
               <li>Learning to Code in One’s Own Language, Benjamin Mako Hill </li>
@@ -828,7 +838,7 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
               <li>The Web Is 30. Whether That's Young or Old Is up to Us. Glitch</li>
             </ul>
           </details>
-        </li>   
+        </li>
 
         <li>
           <details close>
@@ -850,7 +860,7 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
             <summary>Websites</summary>
             <ul>
               <li>https://glitch.com/</li>
-              <li>https://first-website-russian.glitch.me/</li>              
+              <li>https://first-website-russian.glitch.me/</li>
               <li>https://info.cern.ch/hypertext/WWW/TheProject.html</li>
               <li>https://en.wikipedia.org/wiki/Cyrillic_o_variants#Multiocular_O</li>
               <li>https://scratch.mit.edu/</li>
@@ -880,7 +890,7 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
             <summary>Special Thanks</summary>
             <ul>
               <li>Professor Shiraz Gallab</li>
-              <li>Professor Daniel Shiffman</li>              
+              <li>Professor Daniel Shiffman</li>
               <li>Yu Lee</li>
           </details>
         </li>
@@ -926,7 +936,7 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
       smoothScroll('#section1', 1000); // Scroll over 1000 milliseconds (1 second)
     });
     document.getElementById('btn2').addEventListener('click', function () {
-      smoothScroll('#sectionesssay', 500); // Scroll over 1000 milliseconds (1 second)
+      smoothScroll('#sectionessay', 500); // Scroll over 1000 milliseconds (1 second)
     });
     document.getElementById('btn3').addEventListener('click', function () {
       smoothScroll('#sectionfoot', 500); // Scroll over 1000 milliseconds (1 second)
@@ -1066,10 +1076,10 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
     var cascadeStart = getCascadeStartPosition(n, xOffset, yOffset, windowWidth, windowHeight);
 
     data.greetings.forEach(function (greeting, index) {
-        var div = document.createElement('div');
-        div.id = 'greeting-' + index; // Assign an ID to each greeting div
-        div.style.position = "absolute";
-        div.innerHTML = `
+      var div = document.createElement('div');
+      div.id = 'greeting-' + index; // Assign an ID to each greeting div
+      div.style.position = "absolute";
+      div.innerHTML = `
           <div class="window dragdiv greetings">
             <div class="overlay"></div>
             <div class="title-bar">
@@ -1090,45 +1100,45 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
           </div>
         </div>`;
 
-        var greetingsContainer = document.getElementById("greetings-container");
-        greetingsContainer.appendChild(div);
+      var greetingsContainer = document.getElementById("greetings-container");
+      greetingsContainer.appendChild(div);
 
-        let firstChild = div.firstElementChild;
-        setActiveWindow(firstChild);
-        div.onmousedown = function (event) {
-            if (!event.target.classList.contains('close')) {
-                setActiveWindow(firstChild);
-            }
-        };
+      let firstChild = div.firstElementChild;
+      setActiveWindow(firstChild);
+      div.onmousedown = function (event) {
+        if (!event.target.classList.contains('close')) {
+          setActiveWindow(firstChild);
+        }
+      };
 
-        dragElement(div.querySelector('.dragdiv')); // Apply drag functionality
+      dragElement(div.querySelector('.dragdiv')); // Apply drag functionality
 
-        var position = getPosition(cascadeStart, index, xOffset, yOffset);
-        var dragDiv = div.querySelector('.dragdiv');
-        dragDiv.style.left = position.x + 'px';
-        dragDiv.style.top = position.y + 'px';
+      var position = getPosition(cascadeStart, index, xOffset, yOffset);
+      var dragDiv = div.querySelector('.dragdiv');
+      dragDiv.style.left = position.x + 'px';
+      dragDiv.style.top = position.y + 'px';
     });
 
     // Set up an Intersection Observer to trigger the pop-up animation
     var observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                data.greetings.forEach((greeting, index) => {
-                    const div = document.getElementById('greeting-' + index);
-                    const dragDiv = div.querySelector('.dragdiv');
-                    setTimeout(function () {
-                        dragDiv.classList.add('pop-up');
-                        dragDiv.classList.add('greetingss');
-                    }, index * 100); // Delay increases with each window
-                });
-                observer.unobserve(entry.target);
-            }
-        });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          data.greetings.forEach((greeting, index) => {
+            const div = document.getElementById('greeting-' + index);
+            const dragDiv = div.querySelector('.dragdiv');
+            setTimeout(function () {
+              dragDiv.classList.add('pop-up');
+              dragDiv.classList.add('greetingss');
+            }, index * 100); // Delay increases with each window
+          });
+          observer.unobserve(entry.target);
+        }
+      });
     }, { threshold: 0.1 }); // Adjust threshold as needed
 
     var greetingsContainer = document.getElementById("greetings-container");
     observer.observe(greetingsContainer);
-}
+  }
 
   //-------------------------top nav
   function openSelectedURL() {
@@ -1204,4 +1214,9 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
     updateLineNumbersa('codea', 'lineNumbersa'); // Update this with the correct IDs
     updateLineNumbers('codeb', 'lineNumbersb'); // Update this with the correct IDs
   });
+
+  // var input = document.getElementById("btn1");
+  // input.addEventListener("focus", function () {
+  //   document.getElementById("btn1overlay").style.backgroundColor = "red";
+  // });
 </script>
