@@ -440,3 +440,10 @@ body {
   margin: 0;
   padding: 12px 8px;
 }
+
+.article-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
