@@ -819,10 +819,11 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
         </span></div>
       <div class="title-bar-controls notranslate">
         <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
         <button aria-label="Close" onclick="closeWindow(this)"></button>
       </div>
     </div>
-    <div class="window-body">
+    <div class="window-body" style="display: contents;">
       <ul class="tree-view" style="flex-direction: column;">
         <li>
           <details open>
