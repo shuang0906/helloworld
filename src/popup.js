@@ -32,6 +32,8 @@ function setActiveWindow(element) {
 
 function closeWindow(button) {
   clickaudio.play();
+  bodyScroll.classList.remove("stop-scrolling");
+
 
   var windowElement = button.closest(".window");
   console.log("windowElement: ", windowElement);
@@ -110,11 +112,13 @@ function restoreWindow(button) {
 
     var windowElement = button.closest(".window");
     if (windowElement) {
+
       windowElement.style.width = originalWidth;
       windowElement.style.height = originalHeight;
       windowElement.style.top = originalTop;
       windowElement.style.left = originalLeft;
       windowElement.style.position = "absolute";
+
       var windowBody = windowElement.getElementsByClassName("window-body")[0];
       if (windowState === "minimized") {
         if (windowBody) {
