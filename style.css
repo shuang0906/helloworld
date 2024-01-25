@@ -447,3 +447,9 @@ body {
   justify-content: center;
   align-items: stretch;
 }
+
+.title-svg{
+  flex: 1;      
+  display: flex;
+  align-items: center;
+}
