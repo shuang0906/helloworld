@@ -142,7 +142,10 @@
       </div>
     </div>
     <div class="window-body" style="display:contents;">
-      <ul class="tree-view title-svg" style="background-color: dodgerblue;">
+      <ul class="tree-view title-svg" style="background-color: dodgerblue;
+      flex: 1;      
+      display: flex;
+      align-items: center;">
         <img width="100%" src="./assets/image/h1.svg">
       </ul>
     </div>
@@ -176,7 +179,10 @@
       </div>
     </div>
     <div class="window-body" style="display:contents;">
-      <ul class="tree-view title-svg" style="background-color: violet">
+      <ul class="tree-view title-svg" style="background-color: violet;      
+      flex: 1;      
+      display: flex;
+      align-items: center;">
         <img width="100%" src="./assets/image/h3.svg">
       </ul>
     </div>
@@ -194,7 +200,10 @@
       </div>
     </div>
     <div class="window-body" style="display:contents;">
-      <ul class="tree-view title-svg" style="background-color: blueviolet;">
+      <ul class="tree-view title-svg" style="background-color: blueviolet;
+      flex: 1;      
+      display: flex;
+      align-items: center;">
         <img width="100%" src="./assets/image/h4.svg">
       </ul>
     </div>
@@ -213,7 +222,10 @@
       </div>
     </div>
     <div class="window-body" style="display:contents;">
-      <ul class="tree-view title-svg" style="background-color: yellow;">
+      <ul class="tree-view title-svg" style="background-color: yellow;  
+      flex: 1;      
+      display: flex;
+      align-items: center;">
         <img width="100%" src="./assets/image/h5.svg">
       </ul>
     </div>
@@ -457,6 +469,7 @@
           Online</span></div>
       <div class="title-bar-controls notranslate">
         <button aria-label="Minimize" onclick="minWindow(this)"></button>
+        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
         <button aria-label="Close" onclick="closeWindow(this)"></button>
       </div>
     </div>
@@ -475,7 +488,6 @@
           class="title-bar-text" style="margin-left: 4px;">Four(4)</span></div>
       <div class="title-bar-controls notranslate">
         <button aria-label="Minimize" onclick="minWindow(this)"></button>
-        <button class="resizeWindow" aria-label="Maximize" onclick="maxWindow(this)"></button>
         <button aria-label="Close" onclick="closeWindow(this)"></button>
       </div>
     </div>
