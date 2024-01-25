@@ -237,8 +237,14 @@
         <button aria-label="Close" onclick="closeWindow(this)"></button>
       </div>
     </div>
-    <div class="window-body" style="display:contents; user-select: text !important;">
-      <ul class="tree-view title" style="padding: 10px;">
+    <div class="window-body" style="display:contents; user-select: text !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    ">
+      <ul class="tree-view title" style="padding: 10px; flex: 1;
+      ">
         <h1>
           Coding Is for Everyone—<br>
           as Long as You Speak English
