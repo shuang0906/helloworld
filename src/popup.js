@@ -58,6 +58,9 @@ function maxWindow(button) {
   bodyScroll.classList.add("stop-scrolling");
 
   var windowElement = button.closest(".window");
+  var windowBody = windowElement.getElementsByClassName("window-body")[0];///
+  windowBody.style.display = "contents";///
+
   if (windowElement) {
     originalWidth = windowElement.style.width;
     originalHeight = windowElement.style.height;
@@ -70,7 +73,6 @@ function maxWindow(button) {
     windowElement.style.left = "0";
     windowElement.style.zIndex = "1000"; // You can adjust this value as needed
     windowElement.style.position = "fixed";
-
 
     // Find the resizeWindow button and update its attributes
     var resizeButton = windowElement.querySelector('.resizeWindow');
@@ -91,7 +93,9 @@ function restoreWindow(button) {
     windowElement.style.height = originalHeight;
     windowElement.style.top = originalTop;
     windowElement.style.left = originalLeft;
-    windowElement.style.zIndex = ""; // Or set to a specific value if needed
+    windowElement.style.zIndex = "";
+    windowElement.style.position = "relative";////////
+
     // Change back the attributes of the button
     button.setAttribute("aria-label", "Maximize");
     button.setAttribute("onclick", "maxWindow(this)");
