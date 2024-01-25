@@ -330,7 +330,7 @@ const world = Globe({ antialias: false, alpha: true })(
   // })
 
   //landmark--------------------------------------------------------------------------------
-
+  .objectLabel("label")
   .onObjectClick((d) => {
     loadimg();
     const MAP_CENTER = { lat: d.lat, lng: d.lng, altitude: 2.5 };

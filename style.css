@@ -446,10 +446,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-}
+}s
 
 .title-svg{
   flex: 1;      
   display: flex;
   align-items: center;
+}
+
+.scene-tooltip{
+  z-index: 10000;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
