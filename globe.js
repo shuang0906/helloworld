@@ -246,7 +246,7 @@ const world = Globe({ antialias: false, alpha: true })(
       appendedDiv.className = "appended-div";
 
       appendedDiv.innerHTML = `
-    <div class="dragdiv window" id="" style="width: 250px;">
+    <div class="dragdiv window landing" id="" style="width: 250px;">
     <div class="overlay"></div>
     <div class="title-bar">
       <div class="title-bar-text">
@@ -352,7 +352,7 @@ const world = Globe({ antialias: false, alpha: true })(
       appendedDiv.className = "appended-div";
 
       appendedDiv.innerHTML = `
-    <div class="dragdiv window" id="" style="width: 250px;">
+    <div class="dragdiv window landing" id="" style="width: 250px;">
     <div class="overlay"></div>
     <div class="title-bar">
       <div class="title-bar-text">

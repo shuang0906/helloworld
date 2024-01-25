@@ -130,7 +130,7 @@
   <script type="module" src="globe.js"></script>
 
   <!-- h1 -->
-  <div class="window dragdiv lang article-title" style="top: 420px; right: 150px; width: 360;">     
+  <div class="window dragdiv lang article-title landing" style="top: 420px; right: 150px; width: 360;">     
     <div class="title-bar">
       <div class="title-bar-text">
         Hello World
@@ -151,7 +151,7 @@
     </div>
   </div>
   <!-- h2 -->
-  <div class="window dragdiv lang" style="top: 90px; left: 190px;">
+  <div class="window dragdiv lang landing" style="top: 90px; left: 190px;">
     <div class="title-bar">
       <div class="title-bar-text">
         你好世界
@@ -169,7 +169,7 @@
     </div>
   </div>
   <!-- h3 -->
-  <div class="window dragdiv lang article-title" style="right: 20px; top: 150px;  width: 420px;">
+  <div class="window dragdiv lang article-title landing" style="right: 20px; top: 150px;  width: 420px;">
     <div class="title-bar">
       <div class="title-bar-text">Hola mundo!</div>
       <div class="title-bar-controls notranslate">
@@ -188,7 +188,7 @@
     </div>
   </div>
   <!-- h4 -->
-  <div class="window dragdiv lang article-title" style="top: 65vh; left: 260px;">
+  <div class="window dragdiv lang article-title landing" style="top: 65vh; left: 260px;">
     <div class="title-bar">
       <div class="title-bar-text">
         Olá, mundo!
@@ -209,7 +209,7 @@
     </div>
   </div>
   <!-- h5 -->
-  <div class="window dragdiv lang article-title" style="top: 70vh; right: 33px; width: 418">
+  <div class="window dragdiv lang article-title landing" style="top: 70vh; right: 33px; width: 418">
     <div class="title-bar">
       <div class="title-bar-text">
         नमस्ते दुनिया
@@ -232,7 +232,7 @@
   </div>
 
   <!-- article title -->
-  <div class="window dragdiv lang article-title" style="top: 200px; left: 50px;">
+  <div class="window dragdiv lang article-title landing" style="top: 200px; left: 50px;">
     <div class="title-bar">
       <div><img src="assets/orgimg/notepad-32x32.png" width="16"></div>
       <div class="title-bar-controls notranslate">
@@ -256,7 +256,7 @@
     </div>
   </div>
 
-  <div class="window dragdiv lang article-title" style="top: 400px; right: 300px; width: 300px;">
+  <div class="window dragdiv lang article-title landing" style="top: 400px; right: 300px; width: 300px;">
     <div class="title-bar">
       <div><img src="assets/orgimg/notepad-32x32.png" width="16"></div>
       <div class="title-bar-controls notranslate">
@@ -1382,7 +1382,7 @@ pi pi pikachu pi pikachu pika pika pi pikachu pika pika pi pi pika pika pikachu 
   });
 
   function closeAllWindows() {
-    var windows = document.querySelectorAll('.dragdiv'); // Assuming dragdiv is the class for draggable windows
+    var windows = document.querySelectorAll('.landing'); // Assuming dragdiv is the class for draggable windows
     windows.forEach(function (window, index) {
       // Set a timeout to add the class that triggers the closing animation
       window.classList.add('close-window');
