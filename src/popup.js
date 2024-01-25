@@ -43,9 +43,9 @@ function closeWindow(button) {
     windowElement.style.display = "none";
     console.log("Window closed: ", windowElement, activeWindow, activeWindows);
     console.log("Window array: ", activeWindows);
-
+    
+    var bodyScroll = document.body;
     bodyScroll.classList.remove("stop-scrolling");
-
     
 } 
 
