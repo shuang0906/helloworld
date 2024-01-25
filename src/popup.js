@@ -94,7 +94,7 @@ function restoreWindow(button) {
     windowElement.style.top = originalTop;
     windowElement.style.left = originalLeft;
     windowElement.style.zIndex = "";
-    windowElement.style.position = "relative";////////
+    windowElement.style.position = "absolute";////////
 
     // Change back the attributes of the button
     button.setAttribute("aria-label", "Maximize");
