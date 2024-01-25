@@ -32,9 +32,6 @@ function setActiveWindow(element) {
 
 function closeWindow(button) {
   clickaudio.play();
-  bodyScroll.classList.remove("stop-scrolling");
-
-
   var windowElement = button.closest(".window");
   console.log("windowElement: ", windowElement);
   console.log("activeWindow: ", activeWindow);
@@ -46,6 +43,9 @@ function closeWindow(button) {
     windowElement.style.display = "none";
     console.log("Window closed: ", windowElement, activeWindow, activeWindows);
     console.log("Window array: ", activeWindows);
+
+    bodyScroll.classList.remove("stop-scrolling");
+
     
 } 
 
