@@ -130,7 +130,13 @@
   <script type="module" src="globe.js"></script>
 
   <!-- h1 -->
-  <div class="window dragdiv lang" style="top: 420px; right: 150px;">
+  <div class="window dragdiv lang" style="top: 420px; right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  ">     
+
     <div class="title-bar">
       <div class="title-bar-text">
         Hello World
@@ -142,7 +148,9 @@
       </div>
     </div>
     <div class="window-body" style="display:contents;">
-      <ul class="tree-view" style="background-color: dodgerblue;">
+      <ul class="tree-view" style="background-color: dodgerblue; 		
+      flex: 1;      
+      ">
         <img width="100%" src="./assets/image/h1.svg">
       </ul>
     </div>
