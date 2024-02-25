@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 //----------------------------------------random position----------------------------------------
 var popaudio = new Audio('assets/popup.wav');
 
