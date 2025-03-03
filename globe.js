@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 //----------------------------------------random position----------------------------------------
 var popaudio = new Audio('assets/popup.wav');
 
@@ -512,7 +514,7 @@ const matrix = new DOMMatrix([1, 0, 0, 1, 0, 0]);
 const imageUrls = [
 
   "assets/bg/5.gif",
-  "assets/bg/b10.pn",
+  "assets/bg/b10.png",
   "assets/bg/2.jpg",
   "assets/bg/11.jpg",
   "assets/bg/b1.png",
